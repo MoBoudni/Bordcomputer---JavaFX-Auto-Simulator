@@ -2,7 +2,7 @@
 
 Eine moderne JavaFX-Anwendung zur Visualisierung und Steuerung eines virtuellen Autos mit realistischem Bordcomputer-Display.
 
-![Bordcomputer Screenshot]([screenshot.png](https://github.com/MoBoudni/Bordcomputer---JavaFX-Auto-Simulator/blob/a8298668db01c67ca577bdf7c0bcd8017ca841dd/Bordcomputer5.png))
+![Bordcomputer Screenshot](https://github.com/MoBoudni/Bordcomputer---JavaFX-Auto-Simulator/blob/a8298668db01c67ca577bdf7c0bcd8017ca841dd/Bordcomputer5.png)
 
 ## 📋 Inhaltsverzeichnis
 
