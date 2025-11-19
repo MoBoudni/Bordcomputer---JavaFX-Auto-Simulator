@@ -1,297 +1,276 @@
-# 🚗 Bordcomputer - JavaFX Auto-Simulator
 
-Eine moderne JavaFX-Anwendung zur Visualisierung und Steuerung eines virtuellen Autos mit realistischem Bordcomputer-Display.
+🚗 Bordcomputer App (JavaFX & Maven)
+
+Dieses Projekt implementiert eine Bordcomputer-Applikation mithilfe von JavaFX und demonstriert dabei fortgeschrittene Java-Konzepte wie das Fluent Interface Pattern (Method Chaining) und eine professionelle Testabdeckung mit JUnit 5 und AssertJ.
 
 ![Bordcomputer Screenshot](https://github.com/MoBoudni/Bordcomputer---JavaFX-Auto-Simulator/blob/a8298668db01c67ca577bdf7c0bcd8017ca841dd/Bordcomputer5.png)
 
-## 📋 Inhaltsverzeichnis
 
-- [Überblick](#überblick)
-- [Features](#features)
-- [Technologien](#technologien)
-- [Voraussetzungen](#voraussetzungen)
-- [Installation](#installation)
-- [Verwendung](#verwendung)
-- [Projektstruktur](#projektstruktur)
-- [Architektur](#architektur)
-- [Code-Dokumentation](#code-dokumentation)
-- [Lizenz](#lizenz)
+📋 Inhaltsverzeichnis
 
-## 🎯 Überblick
+🎯 Überblick
 
-Der Bordcomputer ist eine Desktop-Anwendung, die ein Auto-Objekt mit allen wesentlichen Funktionen simuliert. Die Anwendung demonstriert das **Fluent Interface Pattern (Method Chaining)** und bietet eine ansprechende grafische Benutzeroberfläche mit Echtzeit-Animationen.
+✨ Features
 
-### Hauptmerkmale
+✅ Unit Tests und AssertJ (Neu)
 
-- 🎨 Moderne, dunkle UI mit abgerundeten Elementen
-- ⚡ Flüssige 60-FPS-Animationen
-- 📊 Analoger Tachometer mit digitaler Anzeige
-- ⛽ Animierte Tankfüllstandsanzeige mit Farbcodierung
-- 🎮 Intuitive Steuerung über Button-Panel
-- 🔄 Responsive Design mit Scroll-Unterstützung
+🛠️ Technologien & Tools
 
-## ✨ Features
+📦 Voraussetzungen
 
-### Tachometer
-- Analoger Tacho mit farbcodierter Skala (Grün → Gelb → Rot)
-- Animierte Nadel mit Smooth-Interpolation
-- Digitale Geschwindigkeitsanzeige mit Dezimalstellen
-- Mini-Tankanzeige im Zentrum
-- Realistische Sensor-Rausch-Simulation
+🚀 Installation
 
-### Tankmanagement
-- Große Tankanzeige mit Füllstandsvisualisierung
-- Farbwechsel basierend auf Füllstand:
-  - 🟢 Grün: > 50%
-  - 🟠 Orange: 25-50%
-  - 🔴 Rot: 10-25%
-  - 🔴 Dunkelrot: < 10%
-- Animierte Übergänge bei Tankveränderungen
-- Automatischer Motorstopp bei leerem Tank
+💻 Verwendung
 
-### Motorsteuerung
-- Motor starten/stoppen mit Statusanzeige
-- Kraftstoffverbrauch bei Beschleunigung
-- Sanftes Ausrollen bei fehlendem Gas
-- Realistische Fahrdynamik
+📂 Projektstruktur
 
-### Fahrzeugfunktionen
-- **Losfahren**: Anfahren aus dem Stand
-- **Beschleunigen**: +30 km/h pro Klick
-- **Bremsen**: -20 km/h pro Klick
-- **Hupen**: Visuelle Benachrichtigung
-- **Tanken**: +10 Liter pro Klick
+🏗 Architektur
 
-## 🛠 Technologien
+📚 Code-Dokumentation
 
-- **Java**: 21
-- **JavaFX**: 21.0.1
-- **Maven**: 3.x
-- **Design Pattern**: Fluent Interface (Method Chaining)
-- **Animation**: AnimationTimer, Timeline, KeyFrame
+📄 Lizenz
 
-## 📦 Voraussetzungen
+🎯 Überblick
 
-- Java Development Kit (JDK) 21 oder höher
-- Maven 3.x
-- JavaFX 21.0.1 (wird automatisch über Maven geladen)
+Der Bordcomputer ist eine Desktop-Anwendung, die ein Auto-Objekt mit allen wesentlichen Funktionen simuliert. Die Anwendung demonstriert das Fluent Interface Pattern (Method Chaining) und bietet eine ansprechende grafische Benutzeroberfläche mit Echtzeit-Animationen.
 
-## 🚀 Installation
+Hauptmerkmale
 
-### 1. Repository klonen
+🎨 Moderne, dunkle UI mit abgerundeten Elementen
 
-```bash
-git clone https://github.com/IhrUsername/bordcomputer-app.git
+⚡ Flüssige 60-FPS-Animationen
+
+📊 Analoger Tachometer mit digitaler Anzeige
+
+⛽ Animierte Tankfüllstandsanzeige mit Farbcodierung
+
+🎮 Intuitive Steuerung über Button-Panel
+
+🔄 Responsive Design mit Scroll-Unterstützung
+
+✨ Features
+
+Tachometer
+
+Analoger Tacho mit farbcodierter Skala (Grün → Gelb → Rot)
+
+Animierte Nadel mit Smooth-Interpolation
+
+Digitale Geschwindigkeitsanzeige mit Dezimalstellen
+
+Mini-Tankanzeige im Zentrum
+
+Realistische Sensor-Rausch-Simulation
+
+Tankmanagement
+
+Große Tankanzeige mit Füllstandsvisualisierung
+
+Farbwechsel basierend auf Füllstand:
+  - 🟢 Grün: > 50%
+  - 🟠 Orange: 25-50%
+  - 🔴 Rot: 10-25%
+  - 🔴 Dunkelrot: < 10%
+
+Animierte Übergänge bei Tankveränderungen
+
+Automatischer Motorstopp bei leerem Tank
+
+Motorsteuerung
+
+Motor starten/stoppen mit Statusanzeige
+
+Kraftstoffverbrauch bei Beschleunigung
+
+Sanftes Ausrollen bei fehlendem Gas
+
+Realistische Fahrdynamik
+
+Fahrzeugfunktionen
+
+Losfahren: Anfahren aus dem Stand
+
+Beschleunigen: +30 km/h pro Klick
+
+Bremsen: -20 km/h pro Klick
+
+Hupen: Visuelle Benachrichtigung
+
+Tanken: +10 Liter pro Klick
+
+✅ Unit Tests und AssertJ (Neu)
+
+Zur Gewährleistung der Korrektheit der Autologik werden umfangreiche Unit Tests verwendet.
+
+Wichtigste Änderungen (Commit-Zusammenfassung):
+
+AssertJ Integration: Die Bibliothek AssertJ wurde über die pom.xml als Test-Dependency hinzugefügt, um die Lesbarkeit und Ausdrucksstärke der Assertions in der Testklasse (AutoTest.java) zu verbessern.
+
+Testabdeckung: Es wurden Tests implementiert, um die korrekte Funktion der Methodenverkettung, der Geschwindigkeitsbegrenzung (Maximalgeschwindigkeit) und der Motorlogik (z.B. Starten ohne Treibstoff) sicherzustellen.
+
+Maven Dependency (pom.xml Auszug):
+
+<dependency>
+    <groupId>org.assertj</groupId>
+    <artifactId>assertj-core</artifactId>
+    <version>${assertj.version}</version>
+    <scope>test</scope>
+</dependency>
+
+
+🛠️ Technologien & Tools
+
+Hauptsprache: Java 21
+
+Build-Tool: Apache Maven
+
+UI-Framework: JavaFX 21.0.1
+
+Unit Testing: JUnit 5
+
+Fluent Assertions: AssertJ
+
+Code Coverage: JaCoCo
+
+Design Pattern: Fluent Interface (Method Chaining)
+
+Animation: AnimationTimer, Timeline, KeyFrame
+
+📦 Voraussetzungen
+
+Java Development Kit (JDK) 21 oder höher
+
+Maven 3.x
+
+JavaFX 21.0.1 (wird automatisch über Maven geladen)
+
+🚀 Installation
+
+1. Repository klonen
+
+git clone [https://github.com/IhrUsername/bordcomputer-app.git](https://github.com/IhrUsername/bordcomputer-app.git)
 cd bordcomputer-app
-```
 
-### 2. Projekt bauen
 
-```bash
-mvn clean install
-```
+2. Projekt bauen und Tests ausführen
 
-### 3. Anwendung starten
+Um das Projekt zu bauen, die Tests auszuführen und den JaCoCo Code Coverage Report zu generieren, verwenden Sie den folgenden Maven-Befehl:
 
-**Option A: Mit Maven**
-```bash
+mvn clean verify
+
+
+Der JaCoCo-Report wird anschließend unter target/site/jacoco/index.html gespeichert.
+
+3. Anwendung starten
+
+Option A: GUI-Start mit Maven
+
 mvn javafx:run
-```
 
-**Option B: Konsolen-Demo**
-```bash
+
+Option B: Konsolen-Demo
+
 mvn exec:java -Dexec.mainClass="de.verkettungsanfrage.Main"
-```
 
-## 💻 Verwendung
 
-### GUI-Anwendung
+💻 Verwendung
 
-Nach dem Start der Anwendung sehen Sie:
+Method Chaining in Code
 
-1. **Linke Seite**: Statusanzeige, Tachometer, Tankfüllstand
-2. **Rechte Seite**: Steuerungspanel mit Buttons
+Die Klasse de.verkettungsanfrage.Auto wurde so konzipiert, dass alle zustandsändernden Methoden die aktuelle Instanz (this) des Autos zurückgeben. Dies ermöglicht eine intuitive und lesbare Kette von Operationen:
 
-#### Typischer Ablauf:
-1. ✅ **Motor starten** (grüner Button)
-2. 🚗 **Losfahren** (blaue Buttons)
-3. ⚡ **Beschleunigen** mehrfach klicken
-4. 🛑 **Bremsen** zur Geschwindigkeitsreduktion
-5. ⛽ **Tanken** bei niedrigem Tankstand
-6. 📯 **Hupen** zur Demo der Zusatzfunktionen
-
-### Method Chaining in Code
-
-```java
 // Fluent Interface Beispiel
 Auto meinAuto = new Auto("VW Golf", 10.0, 220);
 
-meinAuto.starteMotor()
+meinAuto.tanken(30.0)
+        .starteMotor()
         .fahreLos()
-        .beschleunige(50.0)
-        .bremsen(20.0)
-        .hupe()
-        .tanken(10.0);
-```
+        .beschleunige(80.0)
+        .zeigeZustand();
 
-## 📂 Projektstruktur
 
-```
+📂 Projektstruktur
+
 bordcomputer-app/
 │
 ├── src/
-│   └── main/
-│       ├── java/
-│       │   └── de/
-│       │       └── verkettungsanfrage/
-│       │           ├── Auto.java           # Model-Klasse mit Fluent Interface
-│       │           ├── Bordcomputer.java   # JavaFX GUI-Anwendung
-│       │           └── Main.java           # Konsolen-Demo
-│       └── resources/
-│           └── styles.css                  # CSS-Styling
+│   └── main/
+│       ├── java/
+│       │   └── de/
+│       │       └── verkettungsanfrage/
+│       │           ├── Auto.java           # Model-Klasse (Fluent Interface)
+│       │           ├── Bordcomputer.java   # JavaFX GUI-Anwendung (View/Controller)
+│       │           └── Main.java           # Konsolen-Demo
+│       └── resources/
+│           └── styles.css                  # CSS-Styling (optional)
 │
-├── pom.xml                                 # Maven-Konfiguration
-└── README.md                               # Diese Datei
-```
+│   └── test/
+│       └── java/
+│           └── de/
+│               └── verkettungsanfrage/
+│                   └── AutoTest.java       # Unit Tests mit JUnit 5 und AssertJ
+│
+├── pom.xml                                 # Maven-Konfiguration
+└── README.md                               # Diese Datei
 
-## 🏗 Architektur
 
-### Design Patterns
+🏗 Architektur
 
-#### 1. Fluent Interface (Method Chaining)
-Alle zustandsändernden Methoden der `Auto`-Klasse geben `this` zurück:
+Design Patterns
 
-```java
+1. Fluent Interface (Method Chaining)
+
+Alle zustandsändernden Methoden der Auto-Klasse geben this zurück:
+
 public Auto beschleunige(double delta) {
-    if (motorLaeuft && tankstand > 0) {
-        this.geschwindigkeit = Math.min(maxGeschwindigkeit, this.geschwindigkeit + delta);
-        verbrauchPruefen(delta);
-    }
-    return this;  // Ermöglicht Verkettung
+    // ... Logik ...
+    return this; // Ermöglicht Verkettung
 }
-```
 
-#### 2. MVC-Inspiration
-- **Model**: `Auto.java` - Geschäftslogik und Zustand
-- **View**: `Bordcomputer.java` - UI-Komponenten
-- **Controller**: Integriert in `Bordcomputer.java` - Event-Handler
 
-### Klassen-Übersicht
+2. MVC-Inspiration
 
-#### Auto.java
+Model: Auto.java - Geschäftslogik und Zustand
+
+View/Controller: Bordcomputer.java - UI-Komponenten und Event-Handler
+
+Klassen-Übersicht
+
+Auto.java
+
 Kernklasse mit folgenden Verantwortlichkeiten:
-- Zustandsverwaltung (Motor, Geschwindigkeit, Tank)
-- Geschäftslogik (Verbrauch, Limits)
-- Fluent Interface für alle Aktionen
 
-**Wichtige Methoden:**
-- `starteMotor()` / `stoppeMotor()`
-- `beschleunige(double)` / `bremsen(double)`
-- `tanken(double)` / `fahreLos()`
-- `istTankKritisch()` - Prüfung auf kritischen Tankstand
+Zustandsverwaltung (Motor, Geschwindigkeit, Tank)
 
-#### Bordcomputer.java
+Geschäftslogik (Verbrauch, Limits)
+
+Fluent Interface für alle Aktionen
+
+Bordcomputer.java
+
 JavaFX-Anwendung mit:
-- Canvas-basiertem Tachometer
-- Timeline-Animationen für weiche Übergänge
-- AnimationTimer für 60-FPS-Updates
-- Responsives Layout (BorderPane, GridPane)
 
-**UI-Komponenten:**
-- `createTacho()` - Analoger Tacho mit digitaler Anzeige
-- `createTank()` - Animierte Tankfüllstandsanzeige
-- `createButtons()` - Steuerungspanel
-- `drawTacho(double)` - Canvas-Rendering
+Canvas-basiertem Tachometer
 
-#### Main.java
-Konsolen-Demo mit zwei Szenarien:
-1. Normales Fahrverhalten
-2. Extremtest (Grenzwerte)
+Timeline-Animationen für weiche Übergänge
 
-## 📚 Code-Dokumentation
+AnimationTimer für 60-FPS-Updates
 
-Alle Klassen sind vollständig mit **JavaDoc** (auf Deutsch) dokumentiert:
+Responsivem Layout
 
-- ✅ Klassen-Dokumentation mit Zweck und Kontext
-- ✅ Methoden-Dokumentation mit `@param`, `@return`, `@throws`
-- ✅ Erklärung von Geschäftslogik und Algorithmen
-- ✅ Inline-Kommentare für komplexe Berechnungen
+📚 Code-Dokumentation
 
-### JavaDoc generieren
+Alle Klassen sind vollständig mit JavaDoc (auf Deutsch) dokumentiert. Sie können die HTML-Dokumentation mit folgendem Maven-Befehl generieren:
 
-```bash
 mvn javadoc:javadoc
-```
 
-Die HTML-Dokumentation wird in `target/site/apidocs/` erstellt.
 
-## 🎨 Styling
+Die Dokumentation wird in target/site/apidocs/ erstellt.
 
-Die Anwendung verwendet ein modernes Dark-Theme:
-
-- **Primärfarben**: Dunkelgrau (#34495e), Blautöne
-- **Akzentfarben**: Grün (Motor), Rot (Kritisch), Orange (Warnung)
-- **Schriftart**: Segoe UI (Windows), Sans-serif (Fallback)
-- **Effekte**: Abgerundete Ecken, Innenschatten, Hover-Effekte
-
-CSS-Anpassungen in `src/main/resources/styles.css`
-
-## 🔧 Konfiguration
-
-### Maven-Properties (pom.xml)
-
-```xml
-<properties>
-    <maven.compiler.source>21</maven.compiler.source>
-    <maven.compiler.target>21</maven.compiler.target>
-    <javafx.version>21.0.1</javafx.version>
-</properties>
-```
-
-### Auto-Konfiguration
-
-Im Code anpassbar:
-
-```java
-// Bordcomputer.java, Zeile ~61
-auto = new Auto("VW Golf", 10.0, 220);
-//              Modell      Tank   Max-Speed
-```
-
-## 🐛 Bekannte Einschränkungen
-
-- Keine Persistierung des Zustands (Daten gehen beim Schließen verloren)
-- Kein Rückwärtsgang implementiert
-- Vereinfachte Verbrauchslogik (linear zur Beschleunigung)
-
-## 🚀 Erweiterungsmöglichkeiten
-
-- 💾 Speichern/Laden des Fahrzeugzustands
-- 🎵 Sound-Effekte (Motor, Hupe)
-- 📊 Statistiken (Durchschnittsverbrauch, Gesamtstrecke)
-- 🎮 Tastatursteuerung (Pfeiltasten)
-- 🌐 Multi-Fahrzeug-Modus
-- 📱 Responsive Mobile-Ansicht
-
-## 📄 Lizenz
+📄 Lizenz
 
 Dieses Projekt ist für Bildungszwecke erstellt.
 
 © 2025 Moboudni - Bordcomputer Deluxe
 
----
-
-## 👤 Autor
-
-**Moboudni**
-
-- GitHub: [@MoBoudni](https://github.com/MoBoudni)
-
-## 🙏 Danksagungen
-
-- JavaFX Community für die hervorragende Dokumentation
-- OpenJFX Team für die moderne UI-Bibliothek
-
----
-
-**Happy Coding! 🚗💨**
+Happy Coding! 🚗💨
