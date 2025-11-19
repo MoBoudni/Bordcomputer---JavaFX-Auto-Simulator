@@ -10,30 +10,55 @@
     <packaging>jar</packaging>
 
     <properties>
-        <!-- Geändert auf Java 21 für bessere Kompatibilität mit JavaFX 21 -->
+        <!-- Java Version -->
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <!-- Geändert auf die existierende Version 21.0.1 -->
+        <!-- Versionsmanagement -->
         <javafx.version>21.0.1</javafx.version>
         <javafx.maven.plugin.version>0.0.8</javafx.maven.plugin.version>
+        <junit.version>5.10.1</junit.version>
+        <assertj.version>3.25.1</assertj.version> <!-- Neue Property für AssertJ -->
+        <maven-surefire-plugin.version>3.2.3</maven-surefire-plugin.version>
     </properties>
 
     <dependencies>
+        <!-- ============================================= -->
+        <!-- Haupt-Anwendung (Non-Test) Dependencies -->
+        <!-- ============================================= -->
         <!-- JavaFX Dependencies -->
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
-            <!-- Version auf 21.0.1 geändert -->
-            <version>21.0.1</version>
+            <version>${javafx.version}</version>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
-            <!-- Version auf 21.0.1 geändert -->
-            <version>21.0.1</version>
+            <version>${javafx.version}</version>
         </dependency>
+
+        <!-- ============================================= -->
+        <!-- UNIT-TEST DEPENDENCIES -->
+        <!-- ============================================= -->
+
+        <!-- JUnit 5 Aggregator -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- AssertJ für Fluent Assertions (Löst das 'org.assertj.core.api' Problem) -->
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>${assertj.version}</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -43,11 +68,13 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.11.0</version>
-                <configuration>
-                    <!-- Auf Java 21 geändert -->
-                    <source>21</source>
-                    <target>21</target>
-                </configuration>
+            </plugin>
+
+            <!-- Wichtig: Surefire Plugin für das Ausführen der Unit Tests -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven-surefire-plugin.version}</version>
             </plugin>
 
             <!-- JavaFX Maven Plugin -->
@@ -58,6 +85,27 @@
                 <configuration>
                     <mainClass>de.verkettungsanfrage.Bordcomputer</mainClass>
                 </configuration>
+            </plugin>
+
+            <!-- Code Coverage Tool -->
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.11</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>report</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
