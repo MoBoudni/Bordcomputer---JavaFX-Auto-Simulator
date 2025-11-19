@@ -133,11 +133,10 @@ mvn javadoc:javadoc
 ```
 → Report unter `target/site/apidocs/index.html`
 
-## 📄 Lizenz
-© 2025 Moboudni – Bordcomputer Deluxe  
-Für Bildungszwecke frei verwendbar.
-
 
 ![Bordcomputer Screenshot](https://github.com/MoBoudni/Bordcomputer---JavaFX-Auto-Simulator/blob/a8298668db01c67ca577bdf7c0bcd8017ca841dd/Bordcomputer5.png)
 
 
+## 📄 Lizenz
+© 2025 Moboudni – Bordcomputer Deluxe  
+Für Bildungszwecke frei verwendbar.
