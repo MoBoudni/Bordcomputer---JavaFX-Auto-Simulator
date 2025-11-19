@@ -6,17 +6,17 @@ Dieses Projekt implementiert eine Bordcomputer-Applikation mithilfe von JavaFX u
 
 📋 Inhaltsverzeichnis
 
- 🎯 Überblick
- ✨ Features
- ✅ Unit Tests und AssertJ (Neu)
- 🛠️ Technologien & Tools
- 📦 Voraussetzungen
- 🚀 Installation
- 💻 Verwendung
- 📂 Projektstruktur
- 🏗 Architektur
- 📚 Code-Dokumentation
- 📄 Lizenz
+ - 🎯 Überblick
+ - ✨ Features
+ - ✅ Unit Tests und AssertJ (Neu)
+ - 🛠️ Technologien & Tools
+ - 📦 Voraussetzungen
+ - 🚀 Installation
+ - 💻 Verwendung
+ - 📂 Projektstruktur
+ - 🏗 Architektur
+ - 📚 Code-Dokumentation
+ - 📄 Lizenz
 
 🎯 Überblick
 
